@@ -7,8 +7,9 @@
   <p >quota: {{quote.quote}}</p>
   <p >autor: {{quote.author}}</p>
   <button type="button" class="btn btn-danger" (click)="ngOnInit()">Change</button><br>
-</div>
+</div><br>
 
+<div>
 <h1><b>FORMS</b></h1>
   <ion-label>Nombre de la Pelicula</ion-label>
   <ion-input [formControl]="nPel" placeholder="Inserta Aqui el nombre de la pelicula"></ion-input>
@@ -20,7 +21,9 @@
   <ion-input [formControl]="cProd" placeholder="Inserta Aqui la Casa Productora"></ion-input>
   <ion-label>Protagonista</ion-label>
   <ion-input [formControl]="prot" placeholder="Inserta Aqui el nombre del Protagonista"></ion-input><br><br>
+  <div style="text-align: center;">
   <button type="button" class="btn btn-danger" (click)="add()">Enviar</button><br>
+</div>
 
   <table>
     <tr>
@@ -40,5 +43,6 @@
       </tr>
     </tbody>
   </table>
+</div>
 
 </div>
